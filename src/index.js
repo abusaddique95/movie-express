@@ -2,11 +2,13 @@ const express = require("express");
 const path = require("path");
 
 const routes = require("./routes");
-const PORT = process.env.PORT || 4000;
+const connection = require("../db/config");
 
 const init = async () => {
   try {
     const app = express();
+
+    const PORT = process.env.PORT || 4000;
 
     // add middleware
     app.use(express.json());
