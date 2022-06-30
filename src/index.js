@@ -1,9 +1,15 @@
 const express = require("express");
 const path = require("path");
 const mysql2 = require("mysql2");
+const exphbs = require("express-handlebars");
+const hbs = exphbs.create({});
 
 const routes = require("./routes");
 const connection = require("../db/config");
+
+// set up handlebars
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
 
 const init = async () => {
   try {
