@@ -1,0 +1,24 @@
+{
+  "name": "movie-express",
+  "version": "1.0.0",
+  "description": "express, models and handlebars",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abusaddique95/movie-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abusaddique95/movie-express/issues"
+  },
+  "homepage": "https://github.com/abusaddique95/movie-express#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.18"
+  }
+}
